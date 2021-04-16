@@ -1,0 +1,33 @@
+version: "3"
+services:
+  redis-cache:
+    image: redis
+    container_name: redis_cache_cnt
+    ports:
+      - 6379:6379
+  aws-localstack:
+    image: aws_localstack
+    container_name: aws_localstack_cnt
+    build: ./aws-localstack # Ubicacion del Dockerfile para localstack
+    ports:
+      - 4566:4566 # Puerto para servicios del localstack
+  redis-admin:
+    image: redis_admin
+    container_name: redis_admin_cnt
+    build: ./redis-admin # Ubicacion del Dockerfile para redis-admin
+    ports:
+      - 6380:6380 # Puerto para ver el redis-admin
+    links:
+      - redis-cache
+    depends_on:
+      - redis-cache
+  dynamodb-admin:
+    image: dynamodb_admin
+    container_name: dynamodb_admin_cnt
+    build: ./dynamodb-admin # Ubicacion del Dockerfile para dynamodb-admin
+    ports:
+      - 4565:4565 # Puerto para ver el dynamodb-admin
+    links:
+      - aws-localstack
+    depends_on:
+      - aws-localstack

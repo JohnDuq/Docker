@@ -1,0 +1,5 @@
+dependencies {
+    compile project(':model')
+    compile 'org.springframework:spring-context'
+    compile 'co.com.bancolombia:secretsmanager:2.2.1'
+}

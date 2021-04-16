@@ -1,0 +1,12 @@
+# Visualización de data en DynamoDB
+# Comando Nativo
+aws dynamodb scan --table-name pri-dev-dy-tab --endpoint-url http://localhost:4566
+
+# Instalación ADMIN DynamoDB
+npm install -g dynamodb-admin
+# Variable necesaria para definir la ubicación de la DynamoDB
+set DYNAMO_ENDPOINT=http://localhost:4566
+# Ejecución ADMIN DynamoDB
+dynamodb-admin --port 4565
+
+#END

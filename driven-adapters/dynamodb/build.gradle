@@ -1,0 +1,8 @@
+dependencies {
+    compile project(':model')
+    compile 'org.springframework:spring-context'
+    compile 'software.amazon.awssdk:sts:2.11.2'
+    compile 'org.glassfish:javax.json:1.1.2'
+    implementation platform('software.amazon.awssdk:bom:2.5.29')
+    implementation 'software.amazon.awssdk:dynamodb'
+}

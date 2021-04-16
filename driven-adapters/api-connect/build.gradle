@@ -1,0 +1,6 @@
+dependencies {
+    compile project(':model')
+    compile 'org.springframework:spring-context'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation "com.squareup.okhttp3:mockwebserver"
+}

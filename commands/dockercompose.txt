@@ -1,0 +1,15 @@
+# Primera ejecución
+docker-compose up --build
+
+# Segunda en adelante
+docker-compose up
+
+# Eliminacion de contenedores, imagenes y volumenes sobrantes
+docker rm -f dynamodb_admin_cnt
+docker rm -f redis_admin_cnt
+docker rm -f redis_cache_cnt
+docker rm -f aws_localstack_cnt
+docker image rm aws_localstack
+docker image rm redis_admin
+docker image rm dynamodb_admin
+docker volume prune

@@ -1,0 +1,13 @@
+# Comando para REDIS Docker
+docker exec -it local-config_cache_1 sh
+# Iniciar Consola Redis
+redis-cli
+# Ver llaves en consola
+KEYS *
+
+# Instalación ADMIN REDIS
+npm install -g redis-commander
+# Ejecución ADMIN REDIS
+redis-commander --port 6380
+
+#END

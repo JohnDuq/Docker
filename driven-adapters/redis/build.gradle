@@ -1,0 +1,5 @@
+dependencies {
+    compile project(':model')
+    compile 'org.springframework:spring-context'
+    compile "org.springframework.boot:spring-boot-starter-data-redis-reactive"
+}

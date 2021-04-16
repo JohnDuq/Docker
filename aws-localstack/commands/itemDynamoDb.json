@@ -1,0 +1,62 @@
+{
+    "id": {
+        "S": "id"
+    },
+    "components": {
+        "L": [
+            {
+                "M": {
+                    "tittle": {
+                        "S": "tittle"
+                    },
+                    "description": {
+                        "S": "Description of tittle"
+                    },
+                    "members": {
+                        "L": [
+                            {
+                                "M": {
+                                    "idDetail": {
+                                        "S": "idDetailSubtitle"
+                                    },
+                                    "subtitle": {
+                                        "S": "Subtitle"
+                                    },
+                                    "tag": {
+                                        "S": "TAG"
+                                    },
+                                    "paragraph": {
+                                        "S": "This is the description of service"
+                                    },
+                                    "icon": {
+                                        "S": "ICON"
+                                    },
+                                    "items": {
+                                        "SS": [
+                                            "ITEM 1",
+                                            "ITEM 2",
+                                            "ITEM 3"
+                                        ]
+                                    },
+                                    "charge": {
+                                        "M": {
+                                            "labelPayment": {
+                                                "S": "Monthly amount to pay:"
+                                            },
+                                            "payment": {
+                                                "N": "1500.2"
+                                            }
+                                        }
+                                    },
+                                    "benefit": {
+                                        "S": "Benefit for member"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

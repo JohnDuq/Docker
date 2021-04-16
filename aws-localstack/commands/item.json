@@ -1,0 +1,28 @@
+{
+  "id": "id",
+  "components": [
+    {
+      "tittle": "tittle",
+      "description": "Description of tittle",
+      "members": [
+        {
+          "paragraph": "This is the description of service",
+          "charge": {
+            "labelPayment": "Monthly amount to pay:",
+            "payment": 1500.2
+          },
+          "idDetail": "idDetailSubtitle",
+          "subtitle": "Subtitle",
+          "icon": "ICON",
+          "tag": "TAG",
+          "items": [
+            "ITEM 1",
+            "ITEM 2",
+            "ITEM 3"
+          ],
+          "benefit": "Benefit for member"
+        }
+      ]
+    }
+  ]
+}
